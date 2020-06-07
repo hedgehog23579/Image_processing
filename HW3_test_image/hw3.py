@@ -24,10 +24,10 @@ def hiseq(v,row,col):
         for j in range(col):
             return_list.append(int(round(255 * (cdf[ v[i * col + j] ] - min) /  (cdfMAX-min ))))
     return return_list
-def rgbtohsi(R, G, B):
-    r = R / 255
-    g = G / 255
-    b = B / 255
+def rgbtohsi(r, g, b):
+    r = r / 255
+    g = g / 255
+    b = b / 255
     num = 0.5 * ((r - g) + (r - b))
     den = ((r - g) * (r - g) + (r - b) * (g - b)) ** (0.5)
     if (b <= g):
