@@ -71,7 +71,7 @@ def hsitorgb(h, s, v):
         g = v*(1-s)
         b = (1 + (den - num)) * v
         r = 3 * v - (b + g)
-    return int(r*250) ,int(g*255) ,int(b*255)
+    return int(r*255) ,int(g*255) ,int(b*255)
 img = Image.open("aloe.jpg").convert("RGB")
 img.show()
 img1 = img.copy()
